@@ -1,0 +1,20 @@
+[package]
+name = "guest_code"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+# Core TLSNotary logic (no_std, disables std in tlsn-core)
+tlsn-core       = { path = "../../../vlayer-tlsn/tlsn/crates/core", default-features = false }
+# No-std JSON parsing (heapless by default)
+serde-json-core = { version = "0.6.0", default-features = false }
+# RISC0 zkVM guest API, no_std
+risc0-zkvm      = { version = "2.0.2", default-features = false }
+# Hex decoding into Vec<u8>
+hex             = "0.4"
+
+[patch.crates-io]
+ring = { git = "https://github.com/MrBeroxar/ring.git" }
+

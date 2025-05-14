@@ -1,0 +1,13 @@
+{
+  "args": {
+    "score": "42"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "User-Agent": "curl/8.7.1", 
+    "X-Amzn-Trace-Id": "Root=1-68249366-65f2e9835571d1450257e33f"
+  }, 
+  "origin": "141.23.191.89", 
+  "url": "https://httpbin.org/get?score=42"
+}
